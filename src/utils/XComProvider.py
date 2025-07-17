@@ -1,6 +1,6 @@
 from twikit import Client, TooManyRequests
 from twikit.tweet import Tweet
-from twikit.list import Result
+from twikit.utils import Result
 from typing import List, Any, Tuple
 import pandas as pd
 from datetime import datetime
