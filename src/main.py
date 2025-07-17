@@ -19,7 +19,7 @@ async def main():
         print("No _users.txt file found.")
         sys.exit(1)
 
-    user_opts = user_opts.split("\n")
+    user_opts = user_opts.strip().split("\n")
 
     provider = XComProvider()
     await provider.init(
@@ -31,8 +31,11 @@ async def main():
     os.makedirs("output/", exist_ok=True)
 
     for account in user_opts:
-        handle = account.split(":")[0]
-        count = int(account.split(":")[1])
+        clean_account = account.strip()
+        split = clean_account.split(":")
+
+        handle = split[0]
+        count = int(split[1])
 
         user_id = await provider.GetUserIDFromHandle(handle=handle)
         
