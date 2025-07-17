@@ -63,7 +63,7 @@ Subsequent runs only need you to execute the run script (unless you delete the e
 ./run.sh
 ```
 
-CSV files should be outputted to your current working directory
+CSV files should be outputted to the 'output/' folder in your current working directory
 
 ## License
 
