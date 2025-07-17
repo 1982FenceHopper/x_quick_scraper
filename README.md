@@ -6,6 +6,12 @@ Python >= 3.11.9
 
 ## Quick Start
 
+First, pull the repository
+
+```bash
+git pull --depth=1 https://github.com/1982FenceHopper/x_quick_scraper
+```
+
 Make sure to populate a .env with these values
 
 ```toml
