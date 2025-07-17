@@ -3,3 +3,9 @@ env/*
 
 .env
 x_com_cookies.json
+_users.txt
+
+*.csv
+
+output/
+output/*
